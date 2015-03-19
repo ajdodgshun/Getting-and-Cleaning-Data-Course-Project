@@ -72,7 +72,7 @@ tidyactivity <- rep(c("Laying", "Sitting", "Standing", "Walking", "Walking Downs
 
 #Bind it up and clean up the column names
 tidyfinal <- cbind(tidysubject, tidyactivity, tidy)
-colnames(tidyfinal)[colnames(tidyfinal) == "tidysubject"] <- "Subject Number"
+colnames(tidyfinal)[colnames(tidyfinal) == "tidysubject"] <- "SubjectNumber"
 colnames(tidyfinal)[colnames(tidyfinal) == "tidyactivity"] <- "Activity"
 
 write.table(tidyfinal, file = "tidy set.txt", row.name=FALSE)
